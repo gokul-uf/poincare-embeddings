@@ -25,5 +25,5 @@ if __name__ == "__main__":
                     "-distribution-power 0 -threads 8")
                 cmd = " ".join([burnin_cmd, "&&", full_cmd])
                 bsub_cmd = (f"bsub -n 2 -W 120:00 -o bsub_log/{config}.OUT "
-                            f" -e bsub_log/{config}.ERR -J {config} {cmd}")
+                            f" -e bsub_log/{config}.ERR -J {config} '{cmd}'")
                 os.system(bsub_cmd)
