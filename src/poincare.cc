@@ -156,7 +156,8 @@ void Poincare::epoch_thread(int32_t thread_id, uint32_t seed, real start_lr, rea
         if (thread_id == 0) {
             // only thread 0 is responsible for printing progress info
             if (iter_count % REPORTING_INTERVAL == 0) {
-                print_info(start, progress, iter_count, lr, model.get_performance());
+
+               // print_info(start, progress, iter_count, lr, model.get_performance());
             }
         }
     }
