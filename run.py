@@ -9,7 +9,7 @@ if __name__ == "__main__":
     for nd in num_dims:
         for nn in num_negs:
             for ne in num_epochs:
-                op_name = f"../embeddings/pc_{nd}_d_{nn}_neg_{ne}.csv"
+                op_name = f"../embeddings/pc_{nd}_d_{nn}_neg_{ne}_epoch.csv"
                 print(f"running {op_name}")
                 print("burnin")
                 cmd = (f"./poincare -graph ../wordnet/noun_closure.tsv "
