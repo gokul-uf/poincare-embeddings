@@ -1,0 +1,47 @@
+Sender: LSF System <lsfadmin@lo-a2-016>
+Subject: Job 912577: <pc_200_d_70_neg_500_epoch.csv> in cluster <leonhard> Done
+
+Job <pc_200_d_70_neg_500_epoch.csv> was submitted from host <lo-login-02> by user <sgokula> in cluster <leonhard> at Thu Nov  8 19:21:51 2018
+Job was executed on host(s) <4*lo-a2-016>, in queue <normal.24h>, as user <sgokula> in cluster <leonhard> at Thu Nov  8 20:38:56 2018
+</cluster/home/sgokula> was used as the home directory.
+</cluster/home/sgokula/poincare-embeddings> was used as the working directory.
+Started at Thu Nov  8 20:38:56 2018
+Terminated at Fri Nov  9 02:49:50 2018
+Results reported at Fri Nov  9 02:49:50 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./evaluate --graph wordnet/noun_closure.tsv --vectors embeddings/pc_200_d_70_neg_500_epoch.csv --include-map
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   22056.48 sec.
+    Max Memory :                                 1365 MB
+    Average Memory :                             1178.05 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               2731.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   22256 sec.
+    Turnaround time :                            26879 sec.
+
+The output (if any) follows:
+
+Filename: embeddings/pc_200_d_70_neg_500_epoch.csv
+Using a sample of 82115 of the 82115 nodes.
+67772 vectors are on the boundary (they will be pulled back).
+mean rank:               986.80
+mean precision@1:        0.1356
+mean average precision:  0.4861
+
+
+PS:
+
+Read file <eval_op/{f}.ERR> for stderr output of this job.
+
