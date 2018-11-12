@@ -1,0 +1,2 @@
+/cluster/home/sgokula/poincare-embeddings/helpers.py:37: RuntimeWarning: invalid value encountered in arccosh
+  return np.arccosh(-mdps + 1e-5)  # add cst for stability (arccosh is monotone)

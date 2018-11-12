@@ -1,0 +1,47 @@
+Sender: LSF System <lsfadmin@lo-a2-026>
+Subject: Job 923656: <pc_100_d_50_neg_500_epoch.csv> in cluster <leonhard> Done
+
+Job <pc_100_d_50_neg_500_epoch.csv> was submitted from host <lo-login-01> by user <sgokula> in cluster <leonhard> at Mon Nov 12 02:44:31 2018
+Job was executed on host(s) <lo-a2-026>, in queue <normal.24h>, as user <sgokula> in cluster <leonhard> at Mon Nov 12 02:45:01 2018
+</cluster/home/sgokula> was used as the home directory.
+</cluster/home/sgokula/poincare-embeddings> was used as the working directory.
+Started at Mon Nov 12 02:45:01 2018
+Terminated at Mon Nov 12 06:10:04 2018
+Results reported at Mon Nov 12 06:10:04 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./evaluate --graph wordnet/noun_closure.tsv --vectors /cluster/scratch/sgokula/trained_pc_embeddings/pc_100_d_50_neg_500_epoch.csv --sample-seed 2 --include-map
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   12159.63 sec.
+    Max Memory :                                 692 MB
+    Average Memory :                             591.30 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               332.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   12321 sec.
+    Turnaround time :                            12333 sec.
+
+The output (if any) follows:
+
+Filename: /cluster/scratch/sgokula/trained_pc_embeddings/pc_100_d_50_neg_500_epoch.csv
+Using a sample of 82115 of the 82115 nodes.
+73868 vectors are on the boundary (they will be pulled back).
+mean rank:               2008.99
+mean precision@1:        0.2665
+mean average precision:  0.4527
+
+
+PS:
+
+Read file <eval_op/pc_100_d_50_neg_500_epoch.csv.ERR> for stderr output of this job.
+
